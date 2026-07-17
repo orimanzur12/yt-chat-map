@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YT Chat Map",
+  "version": "0.1.0",
+  "description": "See where fellow viewers of a YouTube stream are on a world map, pinned with their avatars.",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YT Chat Map settings"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["vendor/leaflet.js", "content.js"],
+      "css": ["vendor/leaflet.css", "style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

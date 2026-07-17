@@ -1,0 +1,13 @@
+{
+  "name": "yt-chat-map-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Presence server for the YT Chat Map extension",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

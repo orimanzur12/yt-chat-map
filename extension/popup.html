@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      width: 260px;
+      margin: 0;
+      padding: 14px;
+      background: #1c1c1c;
+      color: #eee;
+      font: 13px "Roboto", "Arial", sans-serif;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 4px;
+      color: #aaa;
+    }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+      padding: 7px 9px;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background: #0f0f0f;
+      color: #eee;
+      font-size: 13px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 6px;
+      background: #3ea6ff;
+      color: #0f0f0f;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    #saved {
+      margin: 8px 0 0;
+      color: #7fd77f;
+      text-align: center;
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h1>🗺️ YT Chat Map</h1>
+
+  <label for="displayName">Display name on the map</label>
+  <input id="displayName" placeholder="Viewer" maxlength="32" />
+
+  <label for="serverUrl">Presence server</label>
+  <input id="serverUrl" placeholder="wss://yt-chat-map.onrender.com" />
+
+  <button id="save">Save</button>
+  <p id="saved">Saved ✓</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
