@@ -16,21 +16,18 @@ server/      Tiny WebSocket presence server (Node.js + ws)
 
 ## Run it
 
-**1. Start the presence server**
+The public presence server is live at `wss://yt-chat-map.onrender.com` and the
+extension points at it by default — so installing the extension is all you need.
+(To hack on the server locally instead: `cd server && npm install && npm start`,
+then set `ws://localhost:8787` in the extension popup.)
 
-```sh
-cd server
-npm install
-npm start          # listens on ws://localhost:8787
-```
-
-**2. Load the extension**
+**Load the extension**
 
 1. Open `chrome://extensions`
 2. Turn on **Developer mode** (top right)
 3. Click **Load unpacked** and pick the `extension/` folder
 
-**3. Try it**
+**Try it**
 
 Open any YouTube video that has live chat (a live stream, or a premiere).
 A red **🗺️ Map** button appears on the chat. Click it, then click
